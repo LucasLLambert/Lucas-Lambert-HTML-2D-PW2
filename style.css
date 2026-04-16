@@ -1,5 +1,102 @@
-/* Arquivo CSS externo */
-.externo {
-    color: rgb(255, 0, 221);
-    font-size: 20px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #83a5ce;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid #1e293b;
+    background-color: #ce0b0b;
+}
+
+header, nav, section, article, aside, footer {
+    border: 1px solid #11345f;
+    padding: 30px;
+    text-align: center;
+    background-color: #c2bfbf;
+    color: #475569;
+}
+
+header {
+    border-top: none;
+}
+
+footer {
+    border-bottom: none;
+}
+
+header, nav, footer {
+    border-left: none;
+    border-right: none;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column section {
+    border-bottom: none;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: #1e3a8a;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav p {
+    color: #f97316;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+section h2 {
+    color: #ff0000;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+article h2 {
+    color: #2563eb;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+aside p {
+    color: #9333ea;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer p {
+    color: #475569;
+    font-size: 14px;
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.5;
 }
